@@ -1,0 +1,44 @@
+<div class="login-wrapper">
+    <form class="login">
+        <section class="title">
+            <h3 class="welcome">Welcome to</h3>
+            The Movie Network
+            <h5 class="hint">Use some password you won't remember but have it saved on Google Chrome.</h5>
+        </section>
+        <div class="login-group">
+            <!--<clr-select-container>-->
+                <!--<select clrSelect name="type" [(ngModel)]="form.type">-->
+                <!--    <option value="local">Local Users</option>-->
+                <!--    <option value="admin">Administrator</option>-->
+                <!--</select>-->
+            <!--</clr-select-container>-->
+            <label>First Name</label>
+            <clr-input-container>
+                <input type="text" name="first-Name" clrInput placeholder="enter your first name" [(ngModel)]="api.userForm.firstName"/>
+            </clr-input-container>
+            <label>Last Name</label>
+            <clr-input-container>
+                <input type="text" name="last-Name" clrInput placeholder="enter your last name" [(ngModel)]="api.userForm.lastName"/>
+            </clr-input-container>
+            <label>Email Address</label>
+            <clr-input-container>
+                <input type="text" name="email-Address" clrInput placeholder="enter your email" [(ngModel)]="api.userForm.email"/>
+            </clr-input-container>
+            <label>Password</label>
+            <clr-password-container>
+                <input type="password" name="password" clrPassword placeholder="Your Social Security #" [(ngModel)]="api.userForm.password"/>
+            </clr-password-container>
+            <!--<clr-checkbox-wrapper>-->
+            <!--    <label>Remember me</label>-->
+            <!--    <input type="checkbox" name="rememberMe" clrCheckbox [(ngModel)]="form.rememberMe"/>-->
+            <!--</clr-checkbox-wrapper>-->
+            <!--<div class="error active">-->
+            <!--    Invalid user name or password-->
+            <!--</div>-->
+            <button (click) = "onClick()" class="btn btn-primary">NEXT</button>
+            <!--<a href="javascript://" class="signup">Sign up for full access!!</a>-->
+        </div>
+    </form>
+</div>
+
+<button = On
